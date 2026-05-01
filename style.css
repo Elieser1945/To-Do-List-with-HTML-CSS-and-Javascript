@@ -1,0 +1,86 @@
+body {
+    background-color: #a4eda4; /* Latar belakang hijau sesuai gambar */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 600px;
+    min-height: 300px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.instruction {
+    font-style: italic;
+    color: #888;
+    font-size: 14px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-button {
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ol {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #f9f9f9;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button[class^="btn-"] {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-blue { background-color: #337ab7; }
+.btn-red { background-color: #a94442; }
+.btn-green { background-color: #5cb85c; }
